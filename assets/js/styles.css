@@ -1,0 +1,133 @@
+html, body {
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    overflow-x:hidden;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1002;
+    box-shadow: 0 -3px 31px 0 rgba(0,0,0,.05), 0 6px 20px 0 rgba(0,0,0,.02);
+    background: rgb(2 33 47); /* Ensure the header has a background */
+}
+
+.delivery-logo {
+    height: 50px;
+    width: auto;
+    cursor: pointer;
+}
+
+.bg-dark {
+    --bs-bg-opacity: 1;
+    background-color: rgb(2 33 47) !important;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: rgba(255, 255, 255, 1);
+}
+
+.navbar-toggler:active,
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.page-content {
+    margin-top: 76px;
+}
+
+.main-content {
+    margin-top: 100px;
+}
+
+.land-design {
+    background-image: url('../img/landing.png'); /* Background image URL */
+    background-size: cover; /* Ensure the image covers the entire section */
+    background-position: center; /* Center the background image */
+    height: 400px; /* Set the height for this section */
+    position: relative; /* Position relative for overlaying text */
+}
+
+.text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white; /* Text color */
+    text-align: center; /* Center align text */
+    font-size: 24px; /* Font size for the text */
+    background-color: rgba(0, 0, 0, 0.5); /* Optional: translucent background for better readability */
+    padding: 20px; /* Padding around the text */
+}
+
+
+.welcome-section {
+    padding: 40px; /* Padding around the entire section */
+    text-align: center; /* Center align the text */
+    background-color: #f8f9fa; /* Light background color */
+    /* margin-top: 20px; */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: subtle shadow for depth */
+}
+
+.welcome-section h1, .welcome-section p {
+    margin-bottom: 20px; /* Space between lines */
+}
+
+.auth-wrapper.auth-v1 {
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.auth-wrapper.auth-v1 .auth-inner {
+    max-width: 400px;
+}
+
+.auth-wrapper .auth-inner {
+    width: 100%;
+    position: relative;
+}
+
+.auth-wrapper .brand-logo {
+    margin: 1rem 0 2rem;
+}
+
+.auth-wrapper .brand-logo {
+    display: flex;
+    justify-content: center;
+}
+
+.auth-wrapper {
+    display: flex;
+    flex-basis: 100%;
+    min-height: calc(100vh - 77px);
+    width: 100%;
+}
+
+.card {
+    border: none;
+    margin-bottom: 2rem;
+    box-shadow: 0 10px 20px rgba(18,38,63,.0313726);
+}
+
+.auth-wrapper .card-body {
+    padding: 2rem 1.5rem;
+}
+
+.card .card-title {
+    font-weight: 500;
+    font-size: 1.285rem;
+}
+
+.form-group {
+    margin-bottom: 0.5rem;
+}
+
+.form-control:focus,
+.form-control:active {
+    outline: none !important;
+    box-shadow: none !important;
+}
